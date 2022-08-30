@@ -1,5 +1,5 @@
 import express from 'express';
-import {inOrderMagicNumber} from "./dehash";
+import {inOrderCombination} from "./dehash";
 const app = express();
 const port = 3000;
 
@@ -16,8 +16,7 @@ app.get('/', (req, res) => {
 
 app.post("/de-hash",(req, res) => {
     dehashList = [];
-    console.log('Body: ', req.body);
-    res.send(inOrderMagicNumber(req.body.hash));
+    res.send(inOrderCombination(req.body.hash));
 })
 
 app.listen(port, () => {
