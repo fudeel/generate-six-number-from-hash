@@ -9,6 +9,9 @@ const isANumber = (char: string) => {
 
 const dehash = (hash: string): string[] => {
     /*
+        @params: string
+        @return: array of strings
+
         Recursive function that gets a string as parameter and returns an array of numeric strings by splitting by 2
         string each time it enters in the recursion and reducing the time complexity of the algorithm
      */
