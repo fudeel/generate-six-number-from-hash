@@ -38,7 +38,7 @@ const dehash = (hash: string): string[] => {
 
 
 
-export const inOrderCombination = (hash: string): Number[] => {
+export const inOrderCombination = (hash: string): number[] => {
     /*
         @params: taskes as input the hash in req.body
         @return: returns an array of 6 numbers
@@ -47,11 +47,11 @@ export const inOrderCombination = (hash: string): Number[] => {
         Return example: [12, 30, 54, 23, 15, 26]. 26 is the Magic number
     */
     const dehashList = dehash(hash);
-    let combination: Number[] = [];
+    const combination: number[] = [];
 
     for (let i = 0; i < dehashList.length; i++ ) {
         let current: string = null;
-        let len = combination.length;
+        const len = combination.length;
         if (len < 6){
             /* if there's space in the six positions */
             if (dehashList[i+1]) {
