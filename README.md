@@ -1,4 +1,3 @@
-# generate-six-number-from-hash
 
 # 6 Number generator from Hash
 
@@ -13,11 +12,9 @@ https://nodejs.org/dist/v16.17.0/node-v16.17.0-x64.msi
 ``` git clone https://github.com/fudeel/generate-six-number-from-hash.git```
 
 2. Navigate to the project folder and run the command
-```npm install
-```
+``` npm install```
 3. To launch the web-server just write 
-```node dist/app.js
-```
+``` node dist/app.js```
 
 
 Once Launched you can make **HTTP POST** Request to the http://localhost:3000/de-hash with this body:
