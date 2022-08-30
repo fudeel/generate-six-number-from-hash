@@ -1,4 +1,4 @@
-
+#
 # 6 Number generator from Hash
 
 ##### What do you need to have installed
