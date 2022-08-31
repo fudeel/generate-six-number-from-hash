@@ -53,7 +53,7 @@ export const inOrderCombination = (hash: string): number[] => {
         const len = combination.length;
         if (len < 6){
             if (dehashList[i+1]) {
-                const addNext = Math.random();  /* returns from 0 to 1 */
+                const addNext = Math.random();
                 if (len < 5 && addNext > 0.5 && (Number(dehashList[i] + Number(dehashList[i+1])) <= 70)) {
                     current = dehashList[i] + dehashList[i+1];
                     if (Number(current) !== 0 && !combination.includes(Number(current))) {
